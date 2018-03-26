@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Audio Player</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="container">
+
+    <div id="audio-img">
+      <img class="cover">
+    </div>
+
+    <div id="audio-player">
+
+      <div id="audio-info">
+        <span class="artist"></span> - <span class="title"></span>
+      </div>
+      <input type="range" id="volume" min="0" max="10" value="5">
+      <br>
+
+      <div id="audio-buttons">
+        <button id="prev"></button>
+        <button id="play"></button>
+        <button id="pause"></button>
+        <button id="stop"></button>
+        <button id="next"></button>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div id="tracker">
+        <div id="progressbar">
+          <span id="progress"></span>
+        </div>
+        <span id="duration"></span>
+      </div>
+
+      <div class="clearfix"></div>
+      <ul id="playlist">
+        <li song="Papercut.mp3" cover="cover1.jpg" artist="Linkin Park">Papercut</li>
+        <li song="One Step Closer.mp3" cover="cover1.jpg" artist="Linkin Park">One Step Closer</li>
+        <li song="With You.mp3" cover="cover1.jpg" artist="Linkin Park">With You</li>
+        <li song="Points Of Authority.mp3" cover="cover1.jpg" artist="Linkin Park">Points Of Authority</li>
+        <li song="Crawling.mp3" cover="cover1.jpg" artist="Linkin Park">Crawling</li>
+        <li song="Runaway.mp3" cover="cover1.jpg" artist="Linkin Park">Runaway</li>
+        <li song="By Myself.mp3" cover="cover1.jpg" artist="Linkin Park">By Myself</li>
+        <li song="In The End.mp3" cover="cover1.jpg" artist="Linkin Park">In The End</li>
+        <li song="A Place For My Head.mp3" cover="cover1.jpg" artist="Linkin Park">A Place For My Head</li>
+        <li song="FORGOTTEN.mp3" cover="cover1.jpg" artist="Linkin Park">Forgotten</li>
+        <li song="CURE FOR THE ITCH.mp3" cover="cover1.jpg" artist="Linkin Park">Cure For The Itch</li>
+        <li song="Pushing Me Away.mp3" cover="cover1.jpg" artist="Linkin Park">Pushing Me Away</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
